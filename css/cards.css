@@ -1,0 +1,74 @@
+:root {
+    font-size: 16px;
+}
+
+.work {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    z-index: 100;
+}
+.card {
+    height: 60vh;
+    width: 300px;
+    margin: 50px;
+    border-width: 1rem;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+    border-radius: .3rem;
+    box-shadow: .5rem .5rem 2rem black;
+    overflow: hidden;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+}
+
+.work .card .intro {
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    background: rgba(84, 86, 84, 0.5);
+    transition: .5s;
+}
+
+.work .card .intro button {
+    padding: .3rem;
+    margin: 10px;
+    width: 100px;
+}
+
+.work h3 {
+    margin: 10px;
+    font-size: 2rem;
+    text-decoration: underline solid rgba(172, 12, 12, 0.755);
+    text-underline-offset: .25rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(182, 179, 179);
+    border: .1rem solid black;
+    border-bottom: .1rem solid rgba(172, 12, 12, 0.755);;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.card:hover .intro {
+    height: 120px;
+    bottom: 0rem;
+    background: rgba(112, 111, 111, 0.3);
+    color: black;
+}
+
+
+.card:hover img {
+    transform: scale(1.05);
+}

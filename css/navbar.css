@@ -1,0 +1,127 @@
+main{
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+.navbar {
+    position: fixed;
+    background-color: rgba(107, 105, 105, 0.767);
+    transition: width 700ms ease;
+    position: absolute;
+    border-right: 1px solid rgba(172, 12, 12, 0.755);
+}
+
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+#logo {
+    display: flex;
+    width: 3rem;
+    height: 5rem;
+}
+
+.nav-item{
+    width: 100%;
+}
+
+.nav-item:hover {
+    background-color: rgba(91, 89, 89, 0.373);
+}
+.nav-item img {
+    width: 5rem;
+    margin: .5rem 1.5rem;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: rgb(20, 19, 19);
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color:rgba(172, 12, 12, 0.755);
+}
+
+.link-text{
+    display: none;
+}
+
+.nav-link i{
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.nav-link.active {
+    background-color: rgba(91, 89, 89, 0.373);
+    border-bottom: .1rem solid rgba(172, 12, 12, 0.755);
+}
+
+
+
+
+/*small screens*/
+@media only screen and (max-width: 768px) {
+    .navbar{
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+        z-index: 900;
+        border-top: 1px solid rgba(172, 12, 12, 0.755);
+    }
+
+    #rose {
+        display: none;  
+    }
+
+    .navbar-nav{
+        flex-direction: row;
+    }
+
+    .nav-link {
+        justify-content: center;
+    }
+
+    .nav-link.active {
+        border-right: .1rem solid rgba(172, 12, 12, 0.755);
+    }
+    
+    main {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+
+    .navbar{
+        top: 0;
+        width: 5rem; /*da matchuje margin-left u main*/
+        height: 100vh;
+        z-index: 900;
+    }
+
+    .navbar:hover {
+        width: 16rem;
+    }
+
+    .navbar-nav:hover {
+        background: rgb(107, 105, 105);
+    }
+
+    .navbar:hover .link-text{
+        display: inline;
+    }
+
+    #logo{
+        height: 4rem;
+        width: 4rem;   
+    }
+}

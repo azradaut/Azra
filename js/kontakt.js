@@ -1,0 +1,4 @@
+window.onbeforeunload = () => {
+    
+    form.reset();
+  }

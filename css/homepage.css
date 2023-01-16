@@ -1,0 +1,77 @@
+.homepage-txt {
+  align-self: center;
+  margin: 2rem 0 2rem 2rem;
+  width: 50%;
+  max-height: 52vh;
+  float: left;
+  
+}
+
+.homepage-txt h1 {
+  font-size: 6.5rem;
+  padding: 1rem;
+}
+
+.homepage-txt p {
+  padding: 1rem;
+  margin-bottom: .5rem;
+  font-size: 1.8rem;
+  color: rgba(172, 12, 12, 0.942);
+
+}
+#home img {
+  width: 36%;
+  height: 58vh;
+  float: right;
+  overflow: hidden;
+  margin: 2rem 2rem 2rem 0;
+}
+
+
+.warp {
+  background-color: rgba(110, 109, 108, 0.818);
+  border: 7px double rgb(14, 14, 14);
+}
+
+#home .warp {
+  margin: 6rem;
+  height: 60vh;
+  width: 80vw;
+}
+
+@media only screen and (max-width: 768px) {
+  #home .warp {
+    margin: 5rem 2rem;
+    position: relative;
+    text-align: center;
+    
+  }
+
+  #home img {
+    width: 70vw;
+    height: 60vh;
+    opacity: .3;
+
+    position: relative;
+  }
+
+   .homepage-txt {
+    margin: 1.5rem;
+    width: 70vw;
+    height: 60vh;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  .homepage-txt h1 {
+    font-size: 4rem;
+  }
+
+  .homepage-txt p {
+    font-size: 2rem;
+  }
+
+}
+
+
+  
