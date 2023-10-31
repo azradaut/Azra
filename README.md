@@ -15,16 +15,6 @@ Welcome to my drawing portfolio! This website showcases my artwork and serves as
 - CSS: Used for styling the website and creating a visually appealing layout.
 - JavaScript: Used for implementing interactivity and functionality on the website.
 
-## Getting Started
-
-To run this website locally, follow these steps:
-
-1. Clone the repository:
-git clone https://github.com/your-username/drawing-portfolio.git
-
-2. Open the project folder in your preferred code editor.
-
-3. Open the `index.html` file in your web browser to view the website.
 
 ## Contributing
 
